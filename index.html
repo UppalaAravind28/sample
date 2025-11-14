@@ -1,104 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uppala Aravind | Portfolio</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <meta charset="UTF-8">
+  <title>HealthTrackRx Clone</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <h1>Uppala Aravind</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certs">Certifications</a>
-      <a href="#contact">Contact</a>
+  <!-- Top green border -->
+  <div class="border-green"></div>
+  <!-- Header with logo and nav -->
+  <header class="site-header">
+    <img src="./Asserts/HealthtrackLogo.png" alt="HealthTrackRx Logo" class="logo" />
+    <nav class="main-nav">
+      <a href="#">Menus</a>
+      <a href="#">About</a>
+      <a href="#">Insights & News</a>
+      <span class="divider"></span>
+      <a href="#">Log In</a>
+      <a href="#">Pay My Bill</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
-
-  <main>
-    <section class="hero" id="about">
-      <h2>About Me</h2>
-      <p>
-        To secure a challenging position where I can utilize my academic
-        knowledge, technical skills, and enthusiasm to contribute effectively
-        to the growth of the organisation while enhancing my professional
-        expertise and gaining valuable real-world experience.
-      </p>
-    </section>
-
-    <hr />
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="grid fade-in">
-        <div class="card">C, Python</div>
-        <div class="card">HTML, CSS</div>
-        <div class="card">MySQL</div>
-        <div class="card">OOPs, DBMS, Cloud Computing</div>
-        <div class="card">Git, GitHub</div>
-        <div class="card">NumPy, Pandas, sklearn, OpenCV</div>
-        <div class="card">Teamwork, Problem-solving</div>
-      </div>
-    </section>
-
-    <hr />
-
-    <section id="certs">
-      <h2>Certifications</h2>
-      <div class="grid fade-in">
-        <div class="card"><a href="https://www.credly.com/badges/6705fb43-2d90-4e4a-893b-599368e45f6a/public_url">AI Fundamentals - Cisco & IBM</a></div>
-        <div class="card">
-          <a href="https://www.linkedin.com/learning/certificates/89153871ef905d8c7d7823b488778da8b339c047ed7eb8cbafaad56475dc8544">OOP in Python - LinkedIn Learning</a>
-        </div>
-        <div class="card"><a href="https://drive.google.com/file/d/1T8pCZyLkF1pECLktQO3wEetn3Rr7rKRM/view">Python - Great Learning</a></div>
-        <div class="card">
-          <a href="https://www.linkedin.com/learning/certificates/6420691fb8cddccbe6eec38276661192915a093971d7d8d31e69967b66f5873d">Prompt Engineering - LinkedIn Learning</a>
-        </div>
-        <div class="card"><a href="https://drive.google.com/file/d/1DkPBc8VpKicjZDWWag3iXsDlZbqedpt4/view">C Programming - Prep Insta</a></div>
-      </div>
-    </section>
-
-    <hr />
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="grid fade-in">
-        <div class="card">
-          <p>
-            📧
-            <a href="mailto:uppalaaravind28@gmail.com">uppalaaravind28@gmail.com</a>
-          </p>
-          <p>
-            🔗
-            <a href="https://www.linkedin.com/in/uppala-aravind-28-lin" target="_blank">LinkedIn</a>
-          </p>
-          <p>
-            💻
-            <a href="https://github.com/UppalaAravind28" target="_blank">GitHub</a>
-          </p>
-        </div>
-      </div>
-    </section>
+  <!-- Optional thin shadow under header -->
+  <div class="header-shadow"></div>
+  <!-- Sub navigation -->
+  <nav class="sub-nav">
+    <a href="#">Practitioners</a>
+    <a href="#">Payors</a>
+    <a href="#">Patients</a>
+  </nav>
+  <!-- Main content: Split hero -->
+  <main class="hero-section">
+    <div class="hero-image">
+      <img src="https://www.healthtrackrx.com/wp-content/uploads/2024/10/HealthTrackRx-Teal-Header-Home-Page-Mobile.jpg" alt="Hero Left" />
+    </div>
+    <div class="hero-text">
+      <h1>
+        Test Today,<br>
+        Results <br>
+        Tomorrow:<br>
+        Fast,<br>
+        Diagnostic Testing
+      </h1>
+    </div>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Uppala Aravind. All rights reserved.</p>
-  </footer>
-
 <script src='https://cdn.jsdelivr.net/npm/kore-web-sdk@11.19.0/dist/umd/kore-web-sdk-umd-chat.min.js'></script> <script> KoreChatSDK.chatConfig.botOptions.API_KEY_CONFIG.KEY = 'add2ad6e97574387b3ae2df766b3db780a107e8f152c40bb867657f319d8b5aast84'; new KoreChatSDK.chatWindow().show(KoreChatSDK.chatConfig); </script>
-
-
 </body>
-
 </html>
