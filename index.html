@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Uppala Aravind | Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <h1>Uppala Aravind</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <h2>About Me</h2>
+      <p>
+        To secure a challenging position where I can utilize my academic
+        knowledge, technical skills, and enthusiasm to contribute effectively
+        to the growth of the organisation while enhancing my professional
+        expertise and gaining valuable real-world experience.
+      </p>
+    </section>
+
+    <hr />
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid fade-in">
+        <div class="card">C, Python</div>
+        <div class="card">HTML, CSS</div>
+        <div class="card">MySQL</div>
+        <div class="card">OOPs, DBMS, Cloud Computing</div>
+        <div class="card">Git, GitHub</div>
+        <div class="card">NumPy, Pandas, sklearn, OpenCV</div>
+        <div class="card">Teamwork, Problem-solving</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="certs">
+      <h2>Certifications</h2>
+      <div class="grid fade-in">
+        <div class="card"><a href="https://www.credly.com/badges/6705fb43-2d90-4e4a-893b-599368e45f6a/public_url">AI Fundamentals - Cisco & IBM</a></div>
+        <div class="card">
+          <a href="https://www.linkedin.com/learning/certificates/89153871ef905d8c7d7823b488778da8b339c047ed7eb8cbafaad56475dc8544">OOP in Python - LinkedIn Learning</a>
+        </div>
+        <div class="card"><a href="https://drive.google.com/file/d/1T8pCZyLkF1pECLktQO3wEetn3Rr7rKRM/view">Python - Great Learning</a></div>
+        <div class="card">
+          <a href="https://www.linkedin.com/learning/certificates/6420691fb8cddccbe6eec38276661192915a093971d7d8d31e69967b66f5873d">Prompt Engineering - LinkedIn Learning</a>
+        </div>
+        <div class="card"><a href="https://drive.google.com/file/d/1DkPBc8VpKicjZDWWag3iXsDlZbqedpt4/view">C Programming - Prep Insta</a></div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid fade-in">
+        <div class="card">
+          <p>
+            📧
+            <a href="mailto:uppalaaravind28@gmail.com">uppalaaravind28@gmail.com</a>
+          </p>
+          <p>
+            🔗
+            <a href="https://www.linkedin.com/in/uppala-aravind-28-lin" target="_blank">LinkedIn</a>
+          </p>
+          <p>
+            💻
+            <a href="https://github.com/UppalaAravind28" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Uppala Aravind. All rights reserved.</p>
+  </footer>
+
+<!-- <script  src="https://cdn.jsdelivr.net/npm/kore-web-sdk@11.16.0/dist/umd/kore-web-sdk-umd-chat.min.js"></script> -->
+<!-- <script>
+        //chat window declaration
+        var chatConfig=KoreChatSDK.chatConfig;
+        var chatWindow=KoreChatSDK.chatWindow;
+        
+        //create chat window instance
+        var chatWindowInstance = new chatWindow();
+
+        //configure bot configurations
+        var botOptions=chatConfig.botOptions;
+        botOptions.JWTUrl = "https://mk2r2rmj21.execute-api.us-east-1.amazonaws.com/dev/users/sts";
+        botOptions.userIdentity = 'aravindu@pronixinc.com';
+        botOptions.botInfo = { name: "Food Ordering", "_id": "st-c0445748-d808-5b6c-a55b-207633e2e316" }; // bot name is case sensitive
+        botOptions.clientId = "cs-13884bc5-31ca-5e8f-b200-4b381e4c97ea";
+        botOptions.clientSecret = "1h42cfxxa/ro4v8xVyXNfOqqU3MOA6TJEJjluU1jkjQ=";
+	/* 
+	Important Note: These keys are provided here for quick demos to generate JWT token at client side but not for Production environment.
+	Refer below document for JWT token generation at server side. Client Id and Client secret should maintained at server end.
+	https://developer.kore.ai/docs/bots/sdks/user-authorization-and-assertion/
+	**/
+        //show chatwindow
+        chatWindowInstance.show(chatConfig);
+
+</script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/kore-web-sdk@11.16.0/dist/umd/kore-web-sdk-umd-chat.min.js"></script>
+<script>
+    // Helper function for a unique user/session ID
+    function getUniqueUserId() {
+        return Date.now() + '_' + Math.floor(Math.random() * 1e6) + '@pronixinc.com';
+    }
+
+    function createNewChatWindow() {
+        // Clone botOptions each time for a fresh config
+        var botOptions = Object.assign({}, KoreChatSDK.chatConfig.botOptions);
+
+        // Unique userIdentity for concurrency
+        botOptions.userIdentity = getUniqueUserId();
+        botOptions.JWTUrl = "https://mk2r2rmj21.execute-api.us-east-1.amazonaws.com/dev/users/sts";
+        botOptions.botInfo = { name: "Food Ordering", "_id": "st-c0445748-d808-5b6c-a55b-207633e2e316" };
+        botOptions.clientId = "cs-13884bc5-31ca-5e8f-b200-4b381e4c97ea";
+        botOptions.clientSecret = "1h42cfxxa/ro4v8xVyXNfOqqU3MOA6TJEJjluU1jkjQ=";
+
+        // New chatConfig for each window
+        var chatConfig = Object.assign({}, KoreChatSDK.chatConfig, { botOptions });
+
+        // Create new chat window instance
+        var chatWindowInstance = new KoreChatSDK.chatWindow();
+
+        // Show chat window (can append to custom element)
+        chatWindowInstance.show(chatConfig);
+        return chatWindowInstance;
+    }
+
+    // Example: Create a new window on each page load or on button click
+    // For demo, auto-create on load:
+    createNewChatWindow();
+
+    // Alternatively, call `createNewChatWindow()` on a button click to open additional chat windows if needed.
+</script>
+
+
+</body>
+
+</html>
